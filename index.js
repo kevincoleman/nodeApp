@@ -22,8 +22,13 @@ server.route({
   }
 });
 
-// Start the server
-server.start(function(){
-  // Log that the server is running
-  console.log('Server running at:', server.info.uri);
-});
+server.pack.register(Good, function (err) {
+  if (err) {
+    throw err;
+  }
+  // Start the server
+  server.start(function(){
+    // Log that the server is running
+    console.log('Server running at:', server.info.uri);
+  });
+})
