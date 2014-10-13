@@ -1,8 +1,10 @@
 var Hapi = require('hapi');
+var Good = require('good');
 
 // Create a server with a host and port
 var server = new Hapi.Server('localhost', 8000);
 
+// / to main
 server.route({
   method: 'GET',
   path: '/',
@@ -11,6 +13,7 @@ server.route({
   }
 });
 
+// /name to name script
 server.route({
   method: 'GET',
   path: '/{name}',

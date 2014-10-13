@@ -13,6 +13,7 @@
   "author": "Kevin Coleman",
   "license": "ISC",
   "dependencies": {
+    "good": "^3.0.1",
     "hapi": "^7.0.0"
   }
 }
