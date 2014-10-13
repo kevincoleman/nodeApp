@@ -29,6 +29,6 @@ server.pack.register(Good, function (err) {
   // Start the server
   server.start(function(){
     // Log that the server is running
-    console.log('Server running at:', server.info.uri);
+    console.log('info', 'Server running at:', server.info.uri);
   });
 })
