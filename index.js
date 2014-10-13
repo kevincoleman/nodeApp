@@ -3,10 +3,6 @@ var Hapi = require('hapi');
 // Create a server with a host and port
 var server = new Hapi.Server('localhost', 8000);
 
-// Log server running
-console.log('Server running at:', server.info.uri);
-
-// Add the route
 server.route({
   method: 'GET',
   path: '/',
@@ -15,5 +11,16 @@ server.route({
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/{name}',
+  handler: function (request, reply) {
+    reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
+  }
+});
+
 // Start the server
-server.start();
+server.start(function(){
+  // Log that the server is running
+  console.log('Server running at:', server.info.uri);
+});
