@@ -8,12 +8,11 @@ console.log('Server running at:', server.info.uri);
 
 // Add the route
 server.route({
-    method: 'GET',
-    path: '/hello',
-    handler: function (request, reply) {
-
-        reply('laterList will be a thing.');
-    }
+  method: 'GET',
+  path: '/',
+  handler: function (request, reply) {
+    reply('laterList will be a thing.');
+  }
 });
 
 // Start the server
