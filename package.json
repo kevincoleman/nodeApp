@@ -1,14 +1,14 @@
 {
-  "name": "laterList",
+  "name": "nodeApp",
   "version": "1.0.0",
-  "description": "A small application for chore reminders",
+  "description": "A small application for learning’s sake",
   "main": "index.js",
   "scripts": {
-    "test": "laterListTest"
+    "test": "testNodeApp"
   },
   "repository": {
     "type": "git",
-    "url": "laterList"
+    "url": "git@github.com:kevincoleman/nodeApp"
   },
   "author": "Kevin Coleman",
   "license": "ISC",

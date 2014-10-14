@@ -1,0 +1,1 @@
+nodeApp is just a test application for me to use to get used to the general development structures. Feel free to fork it to add features and fun stuff, if nothing else so you can show me that it exists!

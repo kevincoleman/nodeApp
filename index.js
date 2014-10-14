@@ -9,7 +9,7 @@ var routes = [
       method: 'GET',
       path: '/',
       handler: function (request, reply) {
-        reply('laterList will be a thing.');
+        reply('Sooner or later this will be useful.');
       }
     },
     {
